@@ -1,4 +1,4 @@
-"""p_crudesample URL Configuration
+"""djangoexample URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from employee import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('emp', views.emp),
+    path('show', views.show),
+    path('edit/<int:id>', views.edit),
+    path('update/<int:id>', views.update),
+    path('delete/<int:id>', views.destroy),
 ]
