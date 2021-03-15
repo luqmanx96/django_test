@@ -3,10 +3,10 @@ import os
 from dotenv import load_dotenv
 load_dotenv()  # to load .env file to disable db login detail
 
-NAME = os.getenv("NAME")
-USER = os.getenv("USER")
-PASSWORD = os.getenv("PASSWORD")
-HOST = os.getenv("HOST")
+NAME = os.getenv('NAME')
+USER = os.getenv('USER')
+PASSWORD = os.getenv('PASSWORD')
+HOST = os.getenv('HOST')
 
 
 """
